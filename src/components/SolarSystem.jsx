@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-// import Planets from '../data/planets';
-// import PlanetCard from './PlanetCard';
+import Planets from '../data/planets';
+import PlanetCard from './PlanetCard';
 import Title from './Title';
+import './SolarSystem.css';
 
 class SolarSystem extends Component {
   render() {
-    // const elements = Planets
-    //   .map((planet, ind) => <PlanetCard key={ ind } planet={ planet } />);
+    const elements = Planets.map(({ name, image }) => (
+      <PlanetCard key={ name } planetName={ name } planetImage={ image } />));
 
     return (
-      <div data-testid="solar-system">
+      <section data-testid="solar-system">
         <Title headline="Planetas" />
-      </div>
+        <section className="container-planets">
+          { elements }
+        </section>
+      </section>
     );
   }
 }

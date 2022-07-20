@@ -1,11 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.planetElement {
+  flex: 1 1 200px;
+  min-width: 150px;
+  max-width: 300px;
+  text-align: center;
+  color: white;
 }
 
 .planet {
-  flex: 1 1 200px;
   min-width: 150px;
   max-width: 200px;
+  margin-bottom: 20px;
 }

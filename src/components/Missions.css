@@ -1,7 +1,7 @@
 .missionsCont {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
   gap: 20px;
+  justify-content: center;
 }

@@ -1,6 +1,25 @@
 .container-planets {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  gap: 20px;
+}
+
+.container-planets div:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.container-planets div:nth-child(even) {
+  align-self: flex-end;
+}
+
+.container-planets div:hover img {
+  transition: 120s;
+}
+
+.container-planets div:hover > img {
+  transform: rotate3d(1, 2.0, 3.0, 360deg);
+  transform-style: preserve-3d;
 }

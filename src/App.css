@@ -6,4 +6,12 @@
 
 body {
   background-image: url(./images/background.png);
+  color: rgb(212, 212, 212);
+  font-family: sans-serif;
+}
+
+.container {
+  width: 95%;
+  padding: 20px;
+  margin: 25px auto;
 }
